@@ -130,6 +130,10 @@ body {
   margin-bottom: 2.5px;
 }
 
+.card-header {
+  cursor: pointer; 
+}
+
 .wave {
   color: #333366 !important;
   transition: color .3s;
