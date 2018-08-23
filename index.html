@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="./index.html"><img id="navbarIcon" src="./css/assets/icon.png"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -20,24 +20,30 @@
         <div class="collapse navbar-collapse" id="navbarsExample04">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link wave" href="./index.html">Our Team</a>
+              <a class="nav-link wave" id="AboutNav">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link wave" href="./registration.html">Registration</a>
+              <a class="nav-link wave" id="ProgramNav">Program</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link wave" href="./faq.html">FAQ</a>
+              <a class="nav-link wave" id="FAQNav">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link wave" href="./sponsors.html">Sponsors</a>
+              <a class="nav-link wave" id="TeamNav">The Team</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link wave" id="SponsorsNav">Sponsors</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link wave" id="RegistrationNav">Registration</a>
+            </li> -->
           </ul>
         </div>
       </nav>
       <div class="text-center">
         <img class="img-fluid" id="mainLogo" src="./css/assets/mainlogo.png"/>
-        <h2> September 29th, 2018, 9:00am to 5:30pm </h2>
-        <h3> with speakers from Adobe, Facebook, Microsoft, and more...</h3>
+        <h3 style="font-size: 35px"><i>Intersecting Creativity & Tech: </br> Driving Disruptive Design as a Workplace Strategy</i></h3>
+        <h3 style="font-size: 20px"> September 29th, 2018 9:00am to 5:30pm @ Boomtown Brewery</h3>
         <img class="bounce" id="arrowDown" src="./css/assets/angle-down.svg"/>
       </div>
       <div id="aboutId" class="textblock row justify-content-center">
@@ -46,11 +52,204 @@
           <p> <b>USC Riptide Summit</b> is a joint project between the entrepreneurial and design-focused student organizations at University of Southern California. It’s powered by AIGA Los Angeles, Adobe, and USC Iovine & Young Academy in collaboration with USC Design for America, USC AIGA, Lavalab, and Spark SC. Our goal is to inspire students to explore the intersections of technology and design through an immersive day-long summit. Speakers and panelists (coming from Adobe, Facebook, AIGA, etc.) will be discussing the processes, tools, and techniques used to build and empower multidisciplinary teams, and share their experiences working in the industry. </p>
         </div>
       </div>
-      <div id="scheduleId" class="textblock row justify-content-center">
+      <div id="programId" class="textblock row justify-content-center">
         <div class="col-md-10">
-          <h1> Schedule </h1>
-          <p> You can view our schedule <a href="./schedule.pdf"><b>here.</b></a></p>
+          <h1> Program </h1>
+          <p> A more in-depth review of the program and curriculum will be released soon. For now, you can view our schedule <a href="./schedule.pdf"><b>here.</b></a></p>
           </div>
+      </div>
+      <div id="faqId" class="faqtop textblock row justify-content-center">
+        <div class="col-md-10">
+          <h1> FAQ </h1>
+          <p> If you can't find your answer here, feel free to contact us at <b>uscriptide@gmail.com</b>.</p>
+        </div>
+        <div class="col-md-8">
+          <div class="card faq">
+            <div id="faq1" class="card-header" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+              <h2 style="font-size: 19px">What is USC Riptide Summit & what should I expect?</h2>
+            </div>
+            <div id="faqCollapse1" class="collapse show" aria-labelledby="faq1" data-parent="#accordion">
+              <div class="card-body">
+                <p class="card-text">USC Riptide Summit is a joint project between the entrepreneurial and design-focused student organizations at the University of Southern California. Powered by Adobe & USC Iovine and Young Academy with USC Design for America, USC AIGA, Spark SC and LavaLab, our goal is to inspire students to explore the intersections of technology and design through an immersive day-long summit. Speakers and panelists will discuss the processes, tools, and techniques used to build and empower multidisciplinary teams and share their experiences with working in the industry.  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card faq">
+            <div id="faq2" class="card-header" data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="true" aria-controls="faqCollapse2">
+              <h2 style="font-size: 19px">Who can attend USC Riptide summit?</h2>
+            </div>
+            <div id="faqCollapse2" class="collapse show" aria-labelledby="faq2" data-parent="#accordion">
+              <div class="card-body">
+                <p class="card-text">USC Riptide Summit is open to college students within the Los Angeles areas, including USC, UCLA, ArtCenter College of Design, etc. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card faq">
+            <div id="faq3" class="card-header" data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="true" aria-controls="faqCollapse3">
+              <h2 style="font-size: 19px">Where can I register for tickets?</h2>
+            </div>
+            <div id="faqCollapse3" class="collapse show" aria-labelledby="faq3" data-parent="#accordion">
+              <div class="card-body">
+                <p class="card-text">Link coming soon! Follow our Facebook page for latest updates. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card faq">
+            <div id="faq4" class="card-header" data-toggle="collapse" data-target="#faqCollapse4" aria-expanded="true" aria-controls="faqCollapse3">
+              <h2 style="font-size: 19px">Where will it take place?</h2>
+            </div>
+            <div id="faqCollapse4" class="collapse show" aria-labelledby="faq4" data-parent="#accordion">
+              <div class="card-body">
+                <p class="card-text">Boomtown Brewery </br>
+  700 Jackson St, </br>
+  Los Angeles, CA 90012 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card faq">
+            <div id="faq5" class="card-header" data-toggle="collapse" data-target="#faqCollapse5" aria-expanded="true" aria-controls="faqCollapse3">
+              <h2 style="font-size: 19px">Where can I learn more about the speakers?</h2>
+            </div>
+            <div id="faqCollapse5" class="collapse show" aria-labelledby="faq5" data-parent="#accordion">
+              <div class="card-body">
+                <p class="card-text">Learn more about our speakers by taking a look at the program. We have speakers coming from Adobe, Microsoft UX, Facebook, Tinder, etc.  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card faq">
+            <div id="faq6" class="card-header" data-toggle="collapse" data-target="#faqCollapse6" aria-expanded="true" aria-controls="faqCollapse3">
+              <h2 style="font-size: 19px">Will food be provided?</h2>
+            </div>
+            <div id="faqCollapse6" class="collapse show" aria-labelledby="faq6" data-parent="#accordion">
+              <div class="card-body">
+                <p class="card-text">We will be catering lunch - so if you plan on coming, check your email for further event information.  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card faq">
+            <div id="faq7" class="card-header" data-toggle="collapse" data-target="#faqCollapse7" aria-expanded="true" aria-controls="faqCollapse3">
+              <h2 style="font-size: 19px">Is this a networking event?</h2>
+            </div>
+            <div id="faqCollapse7" class="collapse show" aria-labelledby="faq7" data-parent="#accordion">
+              <div class="card-body">
+                <p class="card-text">For the last portion of the event, be able to network & mingle with the speakers, professionals, sponsors, and students in the LA area.  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card faq">
+            <div id="faq9" class="card-header" data-toggle="collapse" data-target="#faqCollapse9" aria-expanded="true" aria-controls="faqCollapse3">
+              <h2 style="font-size: 19px">What should I bring?</h2>
+            </div>
+            <div id="faqCollapse9" class="collapse show" aria-labelledby="faq9" data-parent="#accordion">
+              <div class="card-body">
+                <p class="card-text">Please bring your laptop and your ID (for registration confirmation). We will have notebooks and pens provided. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card faq">
+            <div id="faq10" class="card-header" data-toggle="collapse" data-target="#faqCollapse10" aria-expanded="true" aria-controls="faqCollapse3">
+              <h2 style="font-size: 19px">What should I wear?</h2>
+            </div>
+            <div id="faqCollapse10" class="collapse show" aria-labelledby="faq10" data-parent="#accordion">
+              <div class="card-body">
+                <p class="card-text">Anything you feel comfortable in. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card faq">
+            <div id="faq11" class="card-header" data-toggle="collapse" data-target="#faqCollapse11" aria-expanded="true" aria-controls="faqCollapse3">
+              <h2 style="font-size: 19px">Do I need to know design? </h2>
+            </div>
+            <div id="faqCollapse11" class="collapse show" aria-labelledby="faq11" data-parent="#accordion">
+              <div class="card-body">
+                <p class="card-text">No! USC Riptide Summit is for everyone and our goal is to inspire students to explore the intersections of technology and design. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="teamId" class="textblock row justify-content-center">
+        <div class="col-md-10">
+          <h1> The Team </h1>
+          <p> More info on the team coming soon! </p>
+        </div>
+      </div>
+      <div id="sponsorsId" class="textblock row justify-content-center">
+        <div class="col-md-10">
+          <h2 style="text-align: center; font-size: 2em; color: #66CCCC"> <b> powered by: </b></h2>
+        </div>
+        <div style="padding-top: 3em; padding-right: 5em" class="col-md-12 row justify-content-center">
+          <div class="col-md-3">
+            <img style="display: center" class="sponsor" src="./css/assets/aigalalogo.png" />
+          </div>
+          <div class="col-md-3">
+            <img style="display: center" class="sponsor" src="./css/assets/adobelogo.png" />
+          </div>
+          <div class="col-md-3">
+            <img style="height: 8em" class="sponsor" src="./css/assets/iovinelogo.png" />
+          </div>
+        </div>
+        <div style="padding-top: 3em" class="col-md-12 row justify-content-center">
+          <div class="col-md-4">
+            <img class="sponsor" src="./css/assets/galogo.png" />
+          </div>
+          <div class="col-md-4">
+            <img class="sponsor" src="./css/assets/boomtownlogo.png" />
+          </div>
+        </div>
+        <div style="padding-top: 3em" class="col-md-12 row justify-content-center">
+          <div class="col-md-4">
+            <img style="height: 2em" class="sponsor" src="./css/assets/kartendesignlogo.png" />
+          </div>
+          <div class="col-md-4">
+            <img style="height: 2em" class="sponsor" src="./css/assets/ticketmasterlogo.png" />
+          </div>
+        </div>
+        <div style="padding-top: 5em" class="col-md-12 row justify-content-center">
+          <div class="col-md-4">
+            <img style="height: 3em" class="sponsor" src="./css/assets/designforamericalogo.png" />
+          </div>
+          <div class="col-md-4">
+            <img style="height: 4em" class="sponsor" src="./css/assets/rxbarlogo.png" />
+          </div>
+        </div>
+        <div class="col-md-10">
+          <h2 style="text-align: center; font-size: 2em; padding-top: 3em; color: #66CCCC"> <b> in collaboration: </b></h2>
+        </div>
+        <div style="padding-top: 5em" class="col-md-12 row justify-content-center">
+          <div class="col-md-4">
+            <img style="height: 5em" class="sponsor" src="./css/assets/lavalablogo.png" />
+          </div>
+          <div class="col-md-4">
+            <img style="height: 5em" class="sponsor" src="./css/assets/aigausclogo.png" />
+          </div>
+        </div>
+        <div style="padding-top: 5em" class="col-md-12 row justify-content-center">
+          <div class="col-md-3">
+            <img style="height: 7em" class="sponsor" src="./css/assets/dfalogo.png" />
+          </div>
+          <div class="col-md-3">
+            <img style="height: 5em" class="sponsor" src="./css/assets/sparklogo.png" />
+          </div>
+        </div>
       </div>
       <img class="footerImage" src="./css/assets/footer.png" />
       </body>

@@ -8650,6 +8650,14 @@ h1 {
   color: #66CCCC;
 }
 
+h1:after {
+  content: "";
+  display: inherit;
+  width: 6em;
+  height: 5px;
+  background: #CC99FF;
+}
+
 h2, a {
   font-family: SpaceMono;
   color: #333366;
@@ -8670,7 +8678,7 @@ body {
   display: none;
 }
 
-#aboutId, #scheduleId {
+#aboutId, #programId, #faqId, #teamId {
   margin: 0px auto;
 }
 
@@ -8680,7 +8688,7 @@ body {
 }
 
 #mainLogo {
-  padding-top: 10vh;
+  padding-top: 20vh;
   padding-bottom: 10vh;
   width: 600px;
 }
@@ -8704,7 +8712,8 @@ body {
 }
 
 .textblock {
-  padding-top: 10vh;
+  padding-top: 7.5vh;
+  padding-bottom: 7.5vh;
 }
 
 .bounce {
@@ -8726,8 +8735,14 @@ body {
   margin-bottom: 2.5px;
 }
 
-.card-header {
+.card-header, .nav-link {
   cursor: pointer;
+}
+
+.sponsor {
+  height: 10em;
+  display: block;
+  margin: 0 auto;
 }
 
 .wave {
